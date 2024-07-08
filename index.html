@@ -11,5 +11,36 @@
     <section class="main">
         <h1>Cursor Animation</h1>
     </section>
+
+    <script>
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+
+        // follow corsor on mousemove
+        document.addEventListener("mousemove", (e) => 
+    {
+        let x = e.pageX;
+        let y = e.pageY;
+
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+        cursor.style.display = "block";
+
+        //cursor effect
+
+        function mouseStopped()
+        {
+            cursor.style.display = "none";
+        }
+        clearTimeout(timeout);
+        timeout = setTimeout(mouseStopped, 1000);
+    });
+
+        //cursor effect when mouseout
+        document.addEventListener("mouseout", () =>
+    {
+        cursor.style.display = "none";
+    });
+    </script>
 </body>
 </html>
