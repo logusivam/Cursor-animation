@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    background: #000115;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* heading tag */
+.main h1
+{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 65px;
+}
+
+/* cursor animation */
+
+.cursor
+{
+    z-index: 999;
+    position: fixed;
+    background: #2696e8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* animation  */
+@keyframes colors
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
