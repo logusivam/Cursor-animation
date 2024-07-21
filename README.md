@@ -2,6 +2,10 @@
 
 This project demonstrates how to create a custom animated cursor using HTML and CSS. The custom cursor is designed to be a circle that changes its hue as it moves, creating a dynamic and visually engaging effect. This animation enhances the user experience by making cursor interactions more interesting and visually appealing.
 
+
+## Demo
+![image](https://github.com/user-attachments/assets/bb1767ea-0128-4760-add0-c61e3286308a)
+
 ## Features
 
 - **Custom Cursor**: Replaces the default cursor with a circular cursor.
